@@ -16,6 +16,10 @@ set background=dark
 
 map <leader>nt :tabnew<cr>
 map <tab> :tabn<cr>
+map <leader>e :NERDTree<cr>
+map <leader>w <C-w><C-w>
+map <leader>q :q<cr>
+map <leader>Q :q!<cr>
 
 syntax on
 set rtp+=~/.vim/bundle/vundle/
@@ -28,6 +32,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-rails.git'
+Bundle 'godlygeek/tabular'
+Bundle 'mileszs/ack.vim'
 
 colorscheme molokai
-
+let g:ackprg="ack -H --nocolor --nogroup --column"
